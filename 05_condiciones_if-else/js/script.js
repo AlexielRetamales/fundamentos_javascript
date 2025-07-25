@@ -107,3 +107,25 @@ function Permiso(){
         alert("No puedes conducir")
     }
 };
+//ejercicio 11
+function Palabra(){
+    let pal1 = prompt("Ingresar primera palabra");
+    let pal2 = prompt("Ingresar segunda palabra");
+    if(pal1 == "" && pal2 ==""){
+        alert("ingrese un valor para chambear...")
+    }else if(pal1.length < pal2.length){
+        alert(`la palabra mas larga es ${pal2} con ${pal2.length} caracteres`)
+    }else if(pal1.length == pal2.length){
+        aler
+    }
+};
+//ejercicio 12
+function Correo(){
+    let correo = prompt("Ingrese su correo");
+    let gmail = "@"
+    if (correo[0] == gmail){
+        alert("que buen correo master");
+    } else {
+        alert("anda a hacerte un buen correo")
+    }
+};
