@@ -120,14 +120,15 @@ function Palabra(){
     }
 };
 //ejercicio 12
-function Correo(){
-    let email = prompt("Ingrese su correo");
-    if (email.inclues ("@")){
-        alert("que buen correo master");
-    } else {
-        alert("anda a hacerte un buen correo")
-    }
-};
+function Correo() {
+  let email = prompt("por favor, ingresar correo:");
+  if (email.includes("@")) {
+    alert(`El correo ${email} es valido`)
+  } else {
+    alert(`El correo ${gmail} es inválido`)
+  }
+}
+
 //ejercicio 13
 function Numero(){
     let numero = parseInt(prompt("Ingresar Numero"));
