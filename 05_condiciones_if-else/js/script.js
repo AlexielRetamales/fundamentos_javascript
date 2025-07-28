@@ -121,11 +121,34 @@ function Palabra(){
 };
 //ejercicio 12
 function Correo(){
-    let correo = prompt("Ingrese su correo");
-    let gmail = "@"
-    if (correo[0] == gmail){
+    let email = prompt("Ingrese su correo");
+    if (email.inclues ("@")){
         alert("que buen correo master");
     } else {
         alert("anda a hacerte un buen correo")
     }
 };
+//ejercicio 13
+function Numero(){
+    let numero = parseInt(prompt("Ingresar Numero"));
+    if (numero > 0){
+        alert(`el ${numero} es positivo`);
+    } else if (numero === 0){
+        alert(`el ${numero} no tiene signo`);
+    } else {
+        alert(`el ${numero} es negativo`);
+    }
+}
+//ejercicio 13
+function Saludo() {
+  let horaActual = parseInt(prompt("ingresar Hora en formato 24Hrs"));
+  if (horaActual < 12) {
+    alert(`buenos dias son las ${horaActual} horas.`)
+  } else if (horaActual <= 12 && horaActual <= 18) {
+    alert(`Buenas Tardes son las ${horaActual}`)
+  } else if (horaActual > 24) {
+    alert(`La hora ${horaActual} ingresada es incorrecta`)
+  } else {
+    alert("Buenas noches")
+  }
+}
