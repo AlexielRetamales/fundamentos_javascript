@@ -139,7 +139,7 @@ function Numero(){
         alert(`el ${numero} es negativo`);
     }
 }
-//ejercicio 13
+//ejercicio 14
 function Saludo() {
   let horaActual = parseInt(prompt("ingresar Hora en formato 24Hrs"));
   if (horaActual < 12) {
@@ -150,5 +150,14 @@ function Saludo() {
     alert(`La hora ${horaActual} ingresada es incorrecta`)
   } else {
     alert("Buenas noches")
+  }
+}
+//ejercicio 15
+function LetrasE() {
+  let palE = prompt("por favor, ingresar Palabra:");
+  if (palE.includes("e")) {
+    alert(`la palabra ${palE} contiene "e"`)
+  } else {
+    alert(`la palabra ${palE} no contiene "e"`)
   }
 }
